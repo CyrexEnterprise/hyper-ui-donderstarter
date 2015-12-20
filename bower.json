@@ -1,0 +1,13 @@
+{
+  "name": "ui_donder_starter",
+  "version": "1.0.0",
+  "homepage": "www.cloudoki.com",
+  "authors": [
+    "Rui Molefas <molefas@gmail.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "devDependencies": {}
+}
