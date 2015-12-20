@@ -115,6 +115,7 @@ function watcher() {
 
     gulp.watch(dirs.source+'/*.html', ['copy:html', 'handlebars']);
     gulp.watch(dirs.components+'/**/*.hbs', ['handlebars']);
+    gulp.watch(dirs.components+'/**/*.html', ['handlebars']);
     gulp.watch(dirs.source+'/pages/*.hbs', ['handlebars']);
     gulp.watch(dirs.source+'/js/*.js', ['lint:before', 'concat']);
     gulp.watch(dirs.source+'/css/*.scss', ['sass']);
