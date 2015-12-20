@@ -1,6 +1,6 @@
 {
   "name": "ui_donder_starter",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Boilerplate for general UI package development using gulp, sass and bower",
   "homepage": "www.cloudoki.com",
   "author": "Rui Molefas",
