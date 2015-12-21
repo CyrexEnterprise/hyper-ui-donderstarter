@@ -44,3 +44,6 @@ After adding the package, you need to include it into the build process (gulpfil
 
 ## Notice
 The final release state is not deployed yet. It will include image processing, minification & other validations.
+
+## Kudos
+Special thanks to [marocas](https://github.com/marocas) for the design patern base.
