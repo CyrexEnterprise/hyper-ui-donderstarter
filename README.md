@@ -10,7 +10,7 @@ Boilerplate for general UI package development using gulp, sass and bower
 - Handlebars for template concatenation;
 - Localhost server deploy;
 - Synchronized browser testing;
-- Atomic design system;
+- Atomic design pattern;
 
 ## Requirements
 - [nodejs](https://nodejs.org/)
