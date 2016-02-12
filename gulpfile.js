@@ -80,13 +80,8 @@ gulp.task('handlebars', function(){
         .pipe(gulpHandlebars(templateData, options))
         .pipe(rename(function(path){
              filename = path.basename
+			 path.extname = ".html"
          }))
-        .pipe(addsrc.prepend(dirs.components+'/_global/head.html'))
-        .pipe(addsrc.append(dirs.components+'/_global/foot.html'))
-        .pipe(concat('temp.html'))
-        .pipe(rename(function(path){
-            path.basename = filename
-        }))
         .pipe(gulp.dest(dirs.release+'/pages'));
 });
 
