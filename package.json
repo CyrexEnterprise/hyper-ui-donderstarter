@@ -26,6 +26,7 @@
     "run-sequence": "^1.1.2"
   },
   "scripts": {
+    "postinstall": "bower install",
     "gulp": "gulp",
     "build": "gulp build",
     "clean": "gulp clean",
