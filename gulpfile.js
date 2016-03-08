@@ -14,7 +14,6 @@ var copy = require('gulp-copy');
 var runSequence = require('run-sequence');
 var handlebars = require('handlebars');
 var gulpHandlebars = require('gulp-handlebars-html')(handlebars);
-var browserSync = require('browser-sync').create();
 
 var dirs = {
     source: 'src',
@@ -115,17 +114,6 @@ function watcher() {
     gulp.watch(dirs.source+'/js/*.js', ['lint:before', 'concat']);
     gulp.watch(dirs.source+'/css/*.scss', ['sass']);
 }
-
-// Browsersync
-gulp.task('server', function() {
-    browserSync.init({
-        server: {
-            baseDir: dirs.release
-        }
-    });
-
-    watcher();
-});
 
 // Watch
 gulp.task('watch', watcher);
