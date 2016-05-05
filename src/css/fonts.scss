@@ -3,12 +3,11 @@
  *	Google Fonts: Droid Sans
  */
  
- // Loading remote webfonts
+/* Loading remote webfonts*/
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans:400,700");
 @import url("http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css");
 
-// Loading local font files. Font variable configuration is done in variables.scss
-
-//@include font-face(ProximaNova, "../fonts/ProximaNovaMedium");
-//@include font-face(ProximaNovaSemiBold, "../fonts/ProximaNovaSemibold");
-//@include font-face(ProximaNovaBold, "../fonts/ProximaNovaBold");
+/* Loading local font files example.  Font variable configuration is done in variables.scss */
+//@include font-face(YourFontRegular, "../fonts/ProximaNovaMedium");
+//@include font-face(YourFontSemiBold, "../fonts/ProximaNovaSemibold");
+//@include font-face(YourFontBold, "../fonts/ProximaNovaBold");
