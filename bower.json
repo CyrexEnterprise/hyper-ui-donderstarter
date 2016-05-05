@@ -9,5 +9,7 @@
     "amd"
   ],
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {
+    "foundation-sites": "~6.2.1"
+  }
 }
