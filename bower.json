@@ -9,5 +9,7 @@
     "amd"
   ],
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {
+    "bootstrap": "~3.3.6"
+  }
 }
