@@ -36,6 +36,8 @@ The donderstarters are setup so you can easily add external packages to your pro
 
 After adding the package, you need to include it into the build process (gulpfile.js:44) and into your foot.html file, making it available in every template page you make.
 
+This branch uses Bootstrap. To learn about Bootstrap go to [http://getbootstrap.com/getting-started/](http://getbootstrap.com/getting-started/)
+
 ## Gulp tasks
 - **npm run gulp** will build the files inside the /dist folder and perform a watch. You are ready to start developing
 - **npm run clean** will clean the dist folder
