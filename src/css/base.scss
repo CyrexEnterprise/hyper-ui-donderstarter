@@ -132,7 +132,6 @@ i.icon {
 .text-secondary {
 	color: $product-secondary; }
 
-.full {
-	margin-left: -20px;
-  margin-right: -20px;
-}
+.normal { opacity: 1; } .light { opacity: .7; } .extra-light { opacity: .5; } .ultra-light { opacity: .3; }
+
+@include margin(20, "bottom");

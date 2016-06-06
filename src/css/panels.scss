@@ -11,6 +11,11 @@
 		margin-bottom: 15px;
 	}
 
+	&.full {
+		margin-left: -20px;
+  	margin-right: -20px;
+  }
+
 	&.half-size {
 		max-width: 550px;
 	}

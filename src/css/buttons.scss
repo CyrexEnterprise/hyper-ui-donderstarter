@@ -1,11 +1,13 @@
 .btn {
 	border-radius: 40px;
     display: inline-block;
-    background-color: $blue;
+    //background-color: $blue;
     padding: 10px 20px;
     color: #fff;
     text-align: center;
     text-decoration: none;
+    min-width: 100px;   
+    margin-bottom: 5px;
 
     > i {
         margin-right: 10px;
@@ -28,6 +30,13 @@
     	width: 100%;
     }
 
+    &.primary {
+        background-color: $blue;
+        &:hover {
+            background-color: $dark-blue;
+        }
+    }
+
     &.greened {
     	background-color: $green;
     	&:hover {
@@ -39,6 +48,22 @@
         background-color: $red;
         &:hover {
             background-color: $dark-red;
+        }
+    }
+
+    &.warning {
+        background-color: $orange;
+        border-color: $orange;
+        &:hover {
+            background-color: $dark-orange;
+        }
+    }
+
+    &.info {
+        background-color: $light-blue;
+        border-color: $light-blue;
+        &:hover {
+            background-color: $dark-light-blue;
         }
     }
 
@@ -63,10 +88,15 @@
     }
 
     &:hover {
-        background-color: $dark-blue;
     	cursor: pointer;
         color: #fff;
         text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
     }
 }
 
