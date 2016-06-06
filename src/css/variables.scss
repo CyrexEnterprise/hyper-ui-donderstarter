@@ -1,32 +1,10 @@
-/* Colour variables */
-$main-color: #8DB911;
-$light-color: #8DB911;
-$dark-color: #4a4a4a;
-
-// Grey scale
-$dark-grey: #4e4e4e;
-$grey: #444F5C;
-$light-grey: #e9eae9;
-$lighter-grey: #f4f4f4;
-$white: #fff;
-
-// Functional
-$blue: #5488c4;
-$green: #a3ce51;
-$orange: #f68d43;
-$red: #e8423b;
-
-$mail-body: #f1f1f1;
-
-// Shadows
-$shadow: 0 0 5px 0 rgba(0,0,0,0.1);
-
-/* Font variables */
-$main-font: 300 14px/1.2em 'Droid Sans', 'Helvetica Neue', sans-serif;
-
-/* Load local fonts configuration example. */
-// $font-regular: YourFontRegular, Helvetica, sans-serif;
-// $font-semibold: YourFontSemiBold, Helvetica, sans-serif;
-// $font-bold: YourFontBold, Helvetica, sans-serif;
-// Add more variations, if necessary
-
+$light-grey: #ddd;
+$grey: #7f8c90;
+$blue: #2198e8;
+$dark-blue: #1684cf;
+$green: #3adb76;
+$dark-green: #2ec566;
+$red: #e94a35;
+$dark-red: #d13722;
+$product-primary: rgb(54, 63, 72);
+$product-secondary: #3adb76;

@@ -1,0 +1,19 @@
+.error{
+	//;
+	width: 80%;
+	margin: 0 auto;
+	.error-msg{
+		color: #ff7070;
+		.alert {
+			font-weight: 600;
+		}
+	}
+	.error-btn{
+		text-align: center;
+		margin-top: 10px;
+		input{
+			border:none;
+		}
+	}
+
+}

@@ -1,0 +1,150 @@
+.outer {
+	padding: 20px;
+}
+.middle {
+	
+}
+
+.panel-auth{
+	width: 520px;
+
+	.auth-title{
+		padding-top:0px;
+		margin-bottom: 0px;
+		margin-top:0px;
+	}
+
+	&.panel .panel-content .auth-info{
+		margin-bottom:30px;
+		text-align:center;
+		font-size:14px;
+	}
+
+	/* Imput fields and labels */
+	&.panel .panel-content .input {
+		margin-bottom: 40px;
+		label{
+			font-size: 16px;
+			color: #939090;
+			font-weight: 300;
+			margin: 10px 18px 0 0;
+			display:inline-block;
+			width:60px;
+			line-height: 1em;
+		}
+		input{
+			font-size: 1em;
+			font-weight: 300;
+			padding: 8px 5px;
+			width: 310px;
+			border: 0;
+			color: #555;
+			outline: none;
+			background-image: -webkit-gradient(linear,left top,left bottom,from(#009688),to(#009688)),-webkit-gradient(linear,left top,left bottom,from(#D2D2D2),to(#D2D2D2));
+			background-image: -webkit-linear-gradient(#009688,#009688),-webkit-linear-gradient(#D2D2D2,#D2D2D2);
+			background-image: -o-linear-gradient(#009688,#009688),-o-linear-gradient(#D2D2D2,#D2D2D2);
+			background-image: linear-gradient(#009688,#009688),linear-gradient(#D2D2D2,#D2D2D2);
+			-webkit-background-size: 0 2px,100% 1px;
+			background-size: 0 2px,100% 1px;
+			background-repeat: no-repeat;
+			background-position: center bottom,center -webkit-calc(100% - 1px);
+			background-position: center bottom,center calc(100% - 1px);
+			background-color: rgba(0,0,0,0);
+			-webkit-transition: background 0s ease-out;
+			-o-transition: background 0s ease-out;
+			transition: background 0s ease-out;
+			float: right;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			border-radius: 0;
+		}
+		input:focus { 
+			outline: none;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+			background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+			background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);
+			background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+			-webkit-background-size: 100% 2px, 100% 1px;
+				  background-size: 100% 2px, 100% 1px;
+			-webkit-box-shadow: none;
+				  box-shadow: none;
+			-webkit-transition-duration: 0.3s;
+			   -o-transition-duration: 0.3s;
+				  transition-duration: 0.3s;
+		}
+
+	}
+
+	/* Form actions: submit and recover password; */
+	.form-actions{
+
+		.submit {
+			width: 150px;
+			border:none;
+			display:block;
+			margin: 0 auto;
+			font-size: 16px;
+		}
+		.action-link{
+			color:#7f8c90;
+			margin-top:15px;
+			display:block;
+			text-align:center;
+		}
+		.action-link:hover{
+			color: #465a65
+		}
+		.forgot{
+			text-decoration:none;
+			font-size:13px;
+			color: #d1d1d1;
+		}
+
+	}
+
+}
+
+.auth-register{
+	width: 850px;
+	overflow:hidden;
+}
+
+.auth-box-left{
+	width:50%;
+	float:left;
+}
+
+.auth-register .input input {
+	width: 270px!important;
+}
+
+.auth-register .input label{
+	width: 100px!important;
+}
+
+.auth-box-right{
+	width:50%;
+	float:right;
+}
+
+.auth-box-right .form-group{
+	width: fit-content;
+	float: right;
+}
+
+.auth-box-left .form-group{
+	width: fit-content;
+}
+
+.clear-fix{
+	clear: both;
+}
+
+#output-errors{
+	color:red;
+	text-align: center;
+}
+
+.register-input{
+	height:30px;
+}

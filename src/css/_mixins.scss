@@ -42,3 +42,53 @@
 		src: $src;
 	}
 }
+
+@mixin margin($val, $side: null) {
+  @if $side {
+    .margin-#{$side}-#{$val} {
+      margin-#{$side}: $val+px !important;
+    }
+  } @else {
+    .margin-#{$val} {
+      margin: $val+px !important;
+    }
+  }
+}
+
+@mixin padding($val, $side: null) {
+  @if $side {
+    .padding-#{$side}-#{$val} {
+      padding-#{$side}: $val+px !important;
+    }
+  } @else {
+    .padding-#{$val} {
+      padding: $val+px !important;
+    }
+  }
+}
+
+@mixin no-padding($side) {
+  @if $side == 'all' {
+    .no-padding {
+      padding: 0 !important;
+    }
+  } @else {
+    .no-padding-#{$side} {
+      padding-#{$side}: 0 !important;
+    }
+  }
+}
+
+@mixin no-box-shadow() {
+  $none: none;
+  -webkit-box-shadow: $none !important;
+  -moz-box-shadow: $none !important;
+  box-shadow: $none !important;
+}
+
+@mixin border-radius($radius: 0px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}

@@ -1,4 +1,19 @@
 /* main scss file */
 @import '_mixins';
-@import 'fonts';
 @import 'variables';
+@import 'vendors';
+@import 'base';
+@import 'buttons';
+@import 'header';
+@import 'footer';
+@import 'components';
+@import 'panels';
+@import 'video';
+@import 'modals';
+@import 'inputs';
+@import 'timepicker';
+@import 'email';
+@import 'auth';
+@import 'error';
+@import 'resetpassword';
+@import 'notifications';

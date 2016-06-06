@@ -1,0 +1,47 @@
+.modal {
+	.modal-content {
+		border-radius: 5px;
+		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+		border: none;
+		padding: 10px;
+
+		.form-group {
+			margin: 0;
+		}
+
+		.modal-footer {
+			padding: 20px 30px 30px;
+		}
+
+		&.split-modal {
+			overflow: hidden;
+
+			.modal-inside {
+				width: 200%;
+				position: relative;
+				left: 0;
+				transition: left .25s;
+
+				&.slide {
+					left: -100%;
+				}
+
+				.modal-part {
+					width: 50%;
+					float: left;
+				}
+			}
+
+			&:after {
+				content: '';
+				clear: both;
+			}
+		}
+	}
+
+	.modal-dialog {
+		&.mini {
+			width: 450px;
+		}
+	}
+}

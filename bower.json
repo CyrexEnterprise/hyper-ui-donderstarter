@@ -1,13 +1,15 @@
 {
-  "name": "ui_donder_starter",
+  "name": "hyper-ui-donderstarter",
   "version": "0.0.1",
   "homepage": "www.cloudoki.com",
   "authors": [
-    "Rui Molefas <molefas@gmail.com>"
+    "Nuno Jorge <nuno@cloudoki.com>"
   ],
   "moduleType": [
     "amd"
   ],
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {
+    "bootstrap": "~3.3.6"
+  }
 }

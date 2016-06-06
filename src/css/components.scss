@@ -1,0 +1,197 @@
+.avatar {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%;
+    background-color: #eee;
+
+	&.big {
+		width: 100px;
+		height: 100px;
+	}
+
+	&.mini {
+		width: 25px;
+		height: 25px;
+		background-color: #e5e5e5;
+	}
+}
+
+// MESSAGES BLOCK
+.message-block {
+	font-size: .8em; 
+
+	.message-block-title {
+		font-weight: bold;
+	}
+
+	.message {
+		position: relative;
+		padding: 20px 0 0;
+
+		.message-avatar {
+			position: absolute;
+			left: 0;
+			top: 20px;
+			width: 50px;
+		}
+
+		.message-body {
+			padding-left: 65px;
+			min-height: 50px;
+
+			.message-content {
+				font-weight: 400;
+			}
+
+			.message-meta {
+				color: $grey;
+				font-size: .9em;
+				padding: 15px 0;
+				border-bottom: 1px solid #e5e5e5;
+			}
+		}
+
+		&:last-child {
+			.message-body .message-meta {
+				border: none;
+			}
+		}
+	}
+}
+
+// APPOINTMENTS BLOCK
+.appointment-block {
+	width: 100%;
+
+	.appointment-block-header {
+		border-bottom: 1px solid #e5e5e5;
+		font-size: .8em;
+
+		.appointment-title {
+			font-weight: bold;
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+	}
+
+	.appointments {
+		.appointment {
+			td {
+
+				// &.btn {
+				// 	background-color: #ccd1d3;
+				// }
+				
+				padding: 10px 5px;
+
+				&.user{
+					width: 25%;
+				}
+
+				&.professional {
+					width: 40%;
+				}
+
+				&.end-time, &.start-time {
+					width: 55px;
+				}
+
+				&.end-time:before {
+					content: '-';
+					position: relative;
+					left: -5px;
+				}
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+.table {
+	display: table;
+	width: 100%;
+
+	.thead {
+		display: table-header-group;
+
+		> div {
+			display: table-cell;
+			border-bottom: 1px solid #e5e5e5;
+			font-size: .8em;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+	}
+
+	.tbody {
+		display: table-row-group;
+		> div {
+			display: table-row;
+
+			> div {
+				display: table-cell;
+				padding: 10px 5px;
+
+				.btn {
+					background-color: #ccd1d3;
+
+					&.open,
+					&.active {
+						background-color: $blue;
+					}
+				}
+
+				&:first-child { padding-left: 0; }
+				&:last-child { padding-right: 0; }
+			}
+		}
+	}
+
+	.table-actions {
+		.table-action {
+			display: inline-block;
+			padding: 6px;
+			color: $grey;
+			font-size: 1.2em;
+			opacity: .4;
+			transition: opacity .25s;
+
+			&:hover {
+				opacity: .7;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&.underlined {
+		.body > div > div, tbody td {
+			border-bottom: 1px solid #000;
+		}
+	}
+}
+
+// ALERTS
+.alert {
+	&.alert-success {
+		background-color: $green !important;
+	}
+
+	&.alert-warning {
+		background-color: $blue !important;
+	}
+
+	&.alert-danger {
+		background-color: $red !important;
+	}
+}

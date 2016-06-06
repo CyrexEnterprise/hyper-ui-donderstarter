@@ -1,0 +1,75 @@
+#email-table-container{
+	background-color: #eee;
+	//height:100%;
+}
+
+#email-container{
+	width:600px;
+	margin-bottom:50px;
+	margin-top:50px;
+}
+
+#email-header{
+	.vt-page-header{
+		margin-bottom:10px;
+		font-size:28px;
+	}
+	img{
+		width:30%;
+		display:block;
+		margin: 0 auto;
+	}
+}
+
+#email-footer-container{
+	width:100%;
+	margin-bottom:50px;
+}
+
+.email-footer-text{
+	color: #999;
+}
+
+.email-footer-text a{
+	color: #999;
+	text-decoration: none;
+}
+
+
+.email-section-title{
+	h3{
+		font-size:18px;
+		text-align:center;
+	}
+}
+
+.email-body-content{
+	font-size:14px;
+	line-height:150%;
+	padding:30px;
+	text-align:justify;
+	.copy-paste{
+		color: #777;
+	}
+
+}
+
+.email-text-content {
+	text-align: center !important;
+}
+
+.email-left-column-content, .email-right-column-content {
+	font-size:14px;
+	line-height:150%;
+	padding:30px;
+	text-align:justify;
+}
+
+.email-left-column-content{
+	border-right:1px solid #CCCCCC;
+}
+
+.browser-disclaimer{
+  font-style: italic;
+  font-size: 14px;
+}

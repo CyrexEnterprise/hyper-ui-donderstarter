@@ -1,0 +1,168 @@
+.vt-video-wrapper {
+	background-color: #3a3a3a;
+
+	> .content-container {
+		padding: 30px;
+
+		.vt-video {
+			position: relative;
+			background-color: #3a3a3a;
+			width: 100%;
+			height: 100%;
+			transition: all -25s;
+
+			.local-stream {
+				position: absolute;
+				max-width: 250px;
+				top: 15px;
+				right: 15px;
+				z-index: 10;
+				width: 25%;
+				box-shadow: 0 0px 10px 0 rgba(0,0,0,0.5);
+				transition: all -25s;
+			}
+		}
+
+		.flashobject {
+			display: none;
+		}
+
+		.vt-video-controls {
+			padding: 0 30px;
+			background-color: #222222;
+			border-radius: 50px;
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			overflow: hidden;
+			transition: all -25s;
+			max-width: 940px;
+
+			.vt-video-controls-left,
+			.vt-video-controls-right,
+			 {
+				width: 50%;
+				float: left;
+			}
+
+			.vt-video-controls-right {
+				text-align: right;
+			}
+
+			.vt-video-controls-middle {
+				    position: absolute;
+				    width: 160px;
+				    margin-right: -80px;
+				    right: 50%;
+				    top: 17px;
+			}
+
+			.vt-video-control {
+				display: inline-block;
+				font-size: 1.7em;
+				color: #8b8b8b;
+				padding: 20px;
+				position: relative;
+
+				.ion-android-contract {
+					display: none;
+				}
+
+				&.toggleable {
+					&.toggled {
+						opacity: .6;
+						&:after {
+							content: '';
+						    width: 5px;
+						    background: #8b8b8b;
+						    height: 35px;
+						    display: block;
+						    position: absolute;
+						    top: 22px;
+						    transform: rotate(-30deg);
+						    left: 25px;
+						    border: 2px solid #222;
+						}
+					}
+				}
+
+				&.control-share {
+					display: none;
+				}
+
+				&:hover {
+					color: #ddd;
+					cursor: pointer;
+				}
+			}
+
+			&:after {
+				content: '';
+				clear: both;
+			}
+		}
+	}
+
+	&.flash-content {
+
+		.flashobject {
+			display: block;
+		}
+
+		.vt-video {
+			display: none;
+		}
+	}
+
+	&.fullscreen {
+	
+
+
+		> .content-container {
+			max-width: 100%;
+			padding: 0;
+
+			.vt-video video{
+				box-shadow: 0 0px 10px 0 rgba(0,0,0,0.5);
+			}
+
+
+			.vt-video > .remote-stream {
+			 	width: initial!important;
+				height: 100vh;
+			}
+
+			.vt-video > .local-stream{
+				position: fixed!important;
+			}
+
+			.vt-video-controls-wrapper {
+				position: absolute;
+			    width: 100%;
+			    left: 0;
+			    bottom: 30px;
+
+			    .vt-video-controls {
+			    	background-color: rgba(0,0,0,0.4);
+			    	.vt-video-control {
+			    		color: #bbb;			    		
+
+				    	.ion-android-contract {
+							display: inline-block;
+						}
+						.ion-android-expand {
+							display: none;
+						}
+					}
+			    }
+			}
+		}
+	}
+
+	&.on-chrome {
+		.control-share {
+			display: inline-block !important;
+		}
+	}
+}
