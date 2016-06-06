@@ -20,7 +20,7 @@ Boilerplate for general UI package development using gulp, sass and bower
 Install the dependencies with `npm install` or `sudo npm install`. Then just run `npm run gulp`.
 
 ## Modular approach
-This UI boilerplate is based on atomic design methodology. The components are divided into **Atoms**, **Molecules**, **Organisms** & **Pages**, thus, using a modular development approach. More information on each component is found on their respective folders. There is also a **global** folder containing header & footer placeholders for your head & footer code, that will automatically be included on each page. More information on this design patter can be found [here](http://patternlab.io/about.html).
+This UI boilerplate is based on atomic design methodology. The components are divided into **Atoms**, **Molecules**, **Organisms** & **Pages**, thus, using a modular development approach. More information on each component is found on their respective folders. There is also a **global** folder containing header & footer placeholders for your head & footer code, that will automatically be included on each page. More information on this design pattern can be found [here](http://patternlab.io/about.html).
 
 ## Development workflow overview
 - **Atoms** will include the smaller components;
