@@ -9,7 +9,7 @@
     "http-server": "^0.8.5"
   },
   "dependencies": {
-    "bower": "^1.4.1",
+    "bower": "^1.7.9",
     "del": "^1.2.0",
     "gulp": "^3.9.0",
     "gulp-cli": "^1.2.1",
